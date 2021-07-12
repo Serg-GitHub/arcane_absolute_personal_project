@@ -1,0 +1,5 @@
+from flask import Flask, render_template, request, redirect
+from flask import Blueprint
+from models.tome import Tome
+
+tomes_blueprint = Blueprint("tomes", __name__)
