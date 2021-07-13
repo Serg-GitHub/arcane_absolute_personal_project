@@ -1,7 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
 
-  <div>
+ <body>
+    <div class="container">
     <p>{{tome.title}}</p>
     <hr>
     <p>{{tome.genre}}</p>
@@ -11,6 +12,7 @@
     <p>{{tome.price}}</p>
     <p><a href="/tomes/{{tome.id}}/edit">Edit</a></p>
   </div>
+</body>
 
 {% endblock %}
 

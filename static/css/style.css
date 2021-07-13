@@ -19,3 +19,12 @@ div.container {
 
 }
 
+body > div.container {
+    display: flex;
+    font-family: 'warcraft', sans-serif;
+    
+    
+
+
+}
+
