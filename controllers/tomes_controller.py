@@ -26,8 +26,8 @@ def create_tome():
     price = request.form['price']
     tome = Tome(title, genre, cost, quantity, author, price)
     tome_repository.save(tome)
-    return redirect('/tomes')
+    return redirect('/tomes') 
 
 
-    
+
 
