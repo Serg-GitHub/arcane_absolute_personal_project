@@ -57,6 +57,16 @@ def tomes(author):
     sql = "SELECT * FROM tomes WHERE author_id = %s"
     values = [author.id]
     results = run_sql(sql, values)  
-    
-      
+
+    for row in results:
+        tome = Tome(row['title'], row['genre'], row['cost'], row['quantity'], author, row['price'], row['id'])
+        tome.append(tome)
+    return tomes   
+
+
+def update(author):
+    sql = "UPDATE authors SET (first_name, last_name) = (%s, %s,) WHERE id = %s"
+    values = [author.first_name, author.last_name, author,id]
+    run_sql(sql, values)  
+
 
