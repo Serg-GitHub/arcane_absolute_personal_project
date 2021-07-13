@@ -1,3 +1,28 @@
 {% extends "base.html" %}
 {% block home %}
-  {% endblock %} 
+ 
+<div class="tome-container">
+
+    {% for tome in all_tomes %}
+    <div class="tome">
+      <div class="content">
+        <a href="/tomes/{{tome.id}}">{{tome.title}} <span>Salutations!</span> </a>
+        <div class="title">
+          Tome id: {{tome.id}}
+          {{tome.genre}}
+          <p><i>{{tome.author.full_name()}}</i></p>
+        </div>
+        <div class="buttons">
+  
+          <form class="delete-form" action="/tomes/{{tome.id}}/delete" method="POST">
+            <button class="trash-button"><i class="fa fa-trash-o fa-3x" style="color:white" aria-hidden="true"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+  
+  </div>
+
+
+{% endblock %} 

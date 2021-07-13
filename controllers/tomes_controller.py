@@ -14,4 +14,6 @@ def tomes():
 @tomes_blueprint.route("/tomes/new", methods=['GET'])
 def new_tome():
     authors = author_repository.select_all()
-    return render_template("tomes/new.html", all_authors = authors)    
+    return render_template("tomes/new.html", all_authors = authors)   
+    
+     

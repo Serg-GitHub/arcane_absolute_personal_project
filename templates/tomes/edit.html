@@ -1,3 +1,45 @@
 {% extends "base.html" %}
 {% block home %}
+<form action="/tomes/{{tome.id}}" method="post">
+    <div>
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" value="{{tome.title}}">
+    </div>
+  
+    <div>
+      <label for="genre">Genre:</label>
+      <input type="text" id="genre" name="genre" value="{{tome.genre}}">
+    </div>
+  
+    <div>
+      <label for="cost">Cost:</label>
+      <input type="text" id="cost" name="cost" value="{{tome.cost}}">
+    </div>
+    
+    <div>
+        <label for="quantity">Quantity:</label>
+        <input type="text" id="quantity" name="quantity" value="{{tome.quantity}}">
+    </div>
+    
+    <div>
+      <label for="author">Author:</label>
+      <select id="author" name="author_id">
+        {% for author in all_authors %}
+          <option value="{{ author.id }}"
+            {% if tome.author.id == author.id %} selected="selected"{% endif %}>
+            {{ author.full_name() }}
+          </option>
+        {% endfor %}
+      </select>
+
+      <div>
+        <label for="price">Price:</label>
+        <input type="text" id="price" name="price" value="{{tome.price}}">
+      </div>
+    </div>
+  
+    <button type="submit">Update Tome</button>
+  
+  </form>
+
   {% endblock %} 
