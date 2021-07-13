@@ -17,4 +17,4 @@ CREATE TABLE tomes (
   quantity INT,
   price INT,
   author_id INT REFERENCES authors(id)
-);
+); 
