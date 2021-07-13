@@ -1,0 +1,20 @@
+html { 
+    background: url(https://gfx.antyradio.pl/var/antyradio/storage/images/news/necronomicon-czy-mroczna-ksiega-z-tworczosci-hp-lovecrafta-istnieje-naprawde-40152/11801932-2-pol-PL/Necronomicon-czy-mroczna-ksiega-z-tworczosci-H.P.-Lovecrafta-istnieje-naprawde_article.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+  }
+ 
+div.container {
+    width: 1000px auto;
+    height: 30px;
+    margin: 10px auto;
+    border-radius: 8px;
+    display: flex;
+    background: rgb(255, 255, 255, 0.1)
+    
+
+
+}
