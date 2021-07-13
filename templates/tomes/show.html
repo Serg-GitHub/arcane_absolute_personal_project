@@ -1,3 +1,20 @@
 {% extends "base.html" %}
-{% block home %}
+{% block content %}
+
+  <div>
+    <p>{{tome.title}}</p>
+    <hr>
+    <p>{{tome.genre}}</p>
+    <p>{{tome.cost}}</p>
+    <p>{{tome.quantity}}</p>
+    <p>{{tome.author.full_name()}}</p>
+    <p>{{tome.price}}</p>
+    <p><a href="/tomes/{{tome.id}}/edit">Edit</a></p>
+  </div>
+
+{% endblock %}
+
+
+
+
   {% endblock %} 

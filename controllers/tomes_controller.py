@@ -28,6 +28,11 @@ def create_tome():
     tome_repository.save(tome)
     return redirect('/tomes') 
 
+@tomes_blueprint.route("/tomes/<id>", methods=['GET'])
+def show_tome(id):
+    tome = tome_repository.select(id)
+    return render_template('tome/show.html', tome = tome)    
+
 
 
 
