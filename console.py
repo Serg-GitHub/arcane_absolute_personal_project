@@ -15,13 +15,13 @@ author_repository.save(author2)
 author3 = Author("Sir Walter", "Scott")
 author_repository.save(author3)
 
-tome_1 = Tome("The Book of Shadows", "Shadow Magic", 15, 3, "Gerald Gardner", 30, author1)
+tome_1 = Tome("The Book of Shadows", "Shadow Magic", 15, 3, author1, 30)
 tome_repository.save(tome_1)
 
-tome_2 = Tome("The Necronomicon", "Death Magic", 25, 2, "Abdul Alhazred", 50, author2) 
+tome_2 = Tome("The Necronomicon", "Death Magic", 25, 2, author2, 50) 
 tome_repository.save(tome_2)
 
-tome_3 = Tome("Demonology & Witchcraft", "Demonology", 15, 4, "Sir Walter Scott", 30, author3)
+tome_3 = Tome("Demonology & Witchcraft", "Demonology", 15, 4, author3, 30)
 tome_repository.save(tome_3)
 
 

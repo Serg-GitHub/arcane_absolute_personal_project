@@ -1,6 +1,6 @@
 class Tome:
 
-    def __init__(self, title, genre, cost, quantity, author, price,  id = None, ):
+    def __init__(self, title, genre, cost, quantity, author, price,  id = None):
         self.title = title
         self.genre = genre
         self.cost = cost
