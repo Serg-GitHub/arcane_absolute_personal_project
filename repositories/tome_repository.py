@@ -42,4 +42,8 @@ def delete_all():
     sql = "DELETE FROM tomes"
     run_sql(sql)
 
-    
+
+def delete(id):
+    sql = "DELETE FROM tomes WHERE id = %s"
+    values = [id]
+    run_sql(sql,values)
