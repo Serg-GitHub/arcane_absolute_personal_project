@@ -49,5 +49,14 @@ def delete(id):
     values = [id] 
     run_sql(sql, values)  
 
+
+
+def tomes(author):
+    tomes = []
+
+    sql = "SELECT * FROM tomes WHERE author_id = %s"
+    values = [author.id]
+    results = run_sql(sql, values)  
     
-        
+      
+
