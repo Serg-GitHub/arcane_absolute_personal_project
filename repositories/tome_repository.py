@@ -37,6 +37,12 @@ def select(id):
         tome = Tome(result['title'], result['genre'], result['cost'], result['quantity'], author, result['price'], result['id'])
         return tome
 
+def update(tome):
+    sql = "UPDATE tomes SET (title, genre, cost, quantity, author_id, price) = (%s, %s, %s, %s, %s, %s) WHERE id = %s"   
+    values = [tome.title, tome.genre, tome.cost, tome.quantity, tome.author.id, tome.price, tome.id] 
+    print(values)
+    run_sql(sql, values)        
+
 
 def delete_all():
     sql = "DELETE FROM tomes"
@@ -47,3 +53,6 @@ def delete(id):
     sql = "DELETE FROM tomes WHERE id = %s"
     values = [id]
     run_sql(sql,values)
+
+
+
