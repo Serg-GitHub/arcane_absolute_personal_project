@@ -15,5 +15,19 @@ def tomes():
 def new_tome():
     authors = author_repository.select_all()
     return render_template("tomes/new.html", all_authors = authors)   
+
+@tomes_blueprint.route("/tomes", methods=['POST'])
+def create_tome():
+    title = request.form['title']
+    genre = request.form['genre']
+    cost = request.form['cost']
+    quantity = request.form['quantity']
+    author = author_repository.select(request.form['author_id'])
+    price = request.form['price']
+    tome = Tome(title, genre, cost, quantity, author, price)
+    tome_repository.save(tome)
+    return redirect('/tomes')
+
+
     
-     
+
