@@ -34,5 +34,12 @@ def show_tome(id):
     return render_template('tome/show.html', tome = tome)    
 
 
+@tomes_blueprint.route("/tomes/<id>/edit", methods=['GET'])
+def edit_tome(id):
+    tome = tome_repository.select(id)
+    authors = author_repository.select_all()
+    return render_template('tomes/edit.html', tome = tome, all_authors = authors)
+
+    
 
 
