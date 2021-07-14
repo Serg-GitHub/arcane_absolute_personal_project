@@ -31,7 +31,7 @@ def create_tome():
 @tomes_blueprint.route("/tomes/<id>", methods=['GET'])
 def show_tome(id):
     tome = tome_repository.select(id)
-    return render_template('tome/show.html', tome = tome)    
+    return render_template('tomes/show.html', tome = tome)    
 
 
 @tomes_blueprint.route("/tomes/<id>/edit", methods=['GET'])

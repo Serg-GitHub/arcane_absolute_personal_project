@@ -19,9 +19,17 @@ div.container {
 
 }
 
-tomes > new > .form {
+.tome {
+
+    /* background-image: ; */
+    background: url(https://images.freeimages.com/images/small-previews/9a9/ye-old-scroll-1194450.jpg)
+    image
+
+}
+
+/* tomes > new > .form {
     display: flex;
-    font-family: 'warcraft', sans-serif; 
+    font-family: 'warcraft', sans-serif;  */
 
 
     
