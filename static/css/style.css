@@ -13,27 +13,100 @@ div.container {
     margin: 10px auto;
     border-radius: 8px;
     display: flex;
+    justify-content: space-evenly;
     background: rgb(255, 255, 255, 0.1);
     font-family: 'warcraft', sans-serif;
-    font-size: xx-large;
+    font-size: 36px;
 
 }
 
-.tome {
 
-    /* background-image: ; */
-    background: url(https://images.freeimages.com/images/small-previews/9a9/ye-old-scroll-1194450.jpg)
-    image
+.form-container {
+    display: flex; 
+    flex-wrap: wrap;
+    width: 200px;
+    margin: 0 auto;
+    
+
 
 }
 
-/* tomes > new > .form {
+.new-tome {
+    display: flex; 
+    flex-wrap: wrap;
+    margin: 0 auto;
+  
+}
+
+.tome-container {
     display: flex;
-    font-family: 'warcraft', sans-serif;  */
+    flex-wrap: wrap;
+    width: 550px;
+    min-height: 550px;
+    margin: 0 auto;
+    background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url(/static/images/scroll.png);
+    background-size: 550px; 
+
+}
+
+html {
+    font-family: 'warcraft', sans-serif;
+    font-size: 32px;
+                                                
+
+}
+
+.show-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    min-height: 550px;
+    margin: 0 auto;
+    background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url(/static/images/scroll.png);
+    background-size: 400px;
+
+}
+
+.scroll {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    min-height: 550px;
+    margin: 0 auto;
+    background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url(/static/images/scroll.png);
+    background-size: 400px; 
+    
+
+
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    min-height: 550px;
+    margin: 0 auto;
+    background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url(/static/images/scroll.png);
+    background-size: 400px;
+}
+
+
+
+    
+    
+    
+
+   
+   
+    
+
+
+
+
 
 
     
 
 
-}
+
 

@@ -2,14 +2,14 @@
   {% block content %}
 
 
-  <div class="container">  
-    <p>{{tome.title}}</p>
-    <p>{{tome.genre}}</p>
-    <p>{{tome.cost}}</p>
-    <p>{{tome.quantity}}</p>
-    <p>{{tome.author.full_name()}}</p>
-    <p>{{tome.price}}</p>
-    <p><a href="/tomes/{{tome.id}}/edit">Edit</a></p>
-   </div>
+<div class="show-container">  
+  <p>{{tome.title}}</p>
+  <p>{{tome.genre}}</p>
+  <p>{{tome.cost}}</p>
+  <p>{{tome.quantity}}</p>
+  <p>{{tome.author.full_name()}}</p>
+  <p>{{tome.price}}</p>
+  <p><a href="/tomes/{{tome.id}}/edit">Edit</a></p>
+</div>
 
  {% endblock %}
