@@ -40,6 +40,24 @@ def edit_tome(id):
     authors = author_repository.select_all()
     return render_template('tomes/edit.html', tome = tome, all_authors = authors)
 
-    
+
+@tomes_blueprint.route("/tomes/<id>", methods=['POST'])
+def update_tome(id):
+    title = request.form['title']
+    genre = request.form['genre']
+    cost = request.form['cost']
+    quantity = request.form['quantity']
+    author = author_repository.select(request.form['author_id'])
+    price = request.form['price']
+    tome = Tome(title, genre, cost, quantity, author, price, id)
+    print(tome.author.full_name())
+    tome_repository.update(tome)
+    return redirect('/tomes')
+
+
+@tomes_blueprint.route("/tomes/<id>/delete", methods=['POST'])
+def delete_tome(id):
+    tome_repository.delete(id)
+    return redirect('/tomes')    
 
 
