@@ -20,14 +20,15 @@
     
     <nav>
         
-        
-        <dl class="menu">
+      <ul style="list-style-type:none;">
+        <!-- <ul class="menu"> -->
             <div class="container">
             <li><a href="{{ url_for('home') }}"style="color:white">Home</a></li>
             <li><a href="{{ url_for('tomes.tomes') }}"style="color:white">Tomes</a></li>
             <li><a href="{{ url_for('tomes.new_tome') }}"style="color:white">New Tome</a></li>
             </div>
-        </dl>
+        </ul>
+      </ul>  
         
     </nav>
   </header>
