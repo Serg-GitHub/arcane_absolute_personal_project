@@ -41,8 +41,10 @@ div.container {
 .tome-container {
     display: flex;
     flex-wrap: wrap;
+    
     width: 550px;
-    min-height: 550px;
+    min-height: auto;
+    min-width: auto;
     margin: 0 auto;
     background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url(/static/images/scroll.png);
     background-size: 550px; 
@@ -51,7 +53,7 @@ div.container {
 
 html {
     font-family: 'warcraft', sans-serif;
-    font-size: 36px;
+    font-size: 35px;
                                                 
 
 }
